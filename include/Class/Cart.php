@@ -1,5 +1,6 @@
 <?php 
 
+// Test Nus
 
 	function do_empty(){
 		global $con;

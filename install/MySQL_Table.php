@@ -8,6 +8,7 @@ while($row = mysqli_fetch_array($result)){
 }
 if(!in_array("Qty", $tableColum)){ $result = $con->query("ALTER TABLE `cart_item` ADD `Qty` VARCHAR(255) NOT NULL;"); }
 if(!in_array("ItemCode", $tableColum)){ $result = $con->query("ALTER TABLE `cart_item` ADD `ItemCode` VARCHAR(255) NOT NULL;"); }
+if(!in_array("ItemType", $tableColum)){ $result = $con->query("ALTER TABLE `cart_item` ADD `ItemType` VARCHAR(255) NOT NULL;"); }
 if(!in_array("EAN", $tableColum)){ $result = $con->query("ALTER TABLE `cart_item` ADD `EAN` VARCHAR(255) NOT NULL;"); }
 if(!in_array("Item_Size", $tableColum)){ $result = $con->query("ALTER TABLE `cart_item` ADD `Item_Size` VARCHAR(255) NOT NULL;"); }
 if(!in_array("Item_Color", $tableColum)){ $result = $con->query("ALTER TABLE `cart_item` ADD `Item_Color` VARCHAR(255) NOT NULL;"); }

@@ -1,5 +1,6 @@
 <?php 
 
+// Test BY Nusrat
 
 	function do_empty(){
 		global $con;
